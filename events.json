@@ -1,0 +1,181 @@
+[
+  {
+    "eventTitle": "Pune Tech Meetup",
+    "eventType": "Offline",
+    "eventHostedBy": "Pune Tech Community",
+    "coverImageUrl": "https://example.com/images/pune_tech_meetup.jpg",
+    "eventDescription": "Join us at the Pune Tech Meetup, where technology enthusiasts, developers, entrepreneurs, and industry professionals come together to connect, learn, and share ideas. This meetup features insightful talks, interactive workshops, and networking sessions covering a range of topics like AI, cloud computing, data science, software development, and emerging tech trends. Whether you're a seasoned tech professional or just getting started, Pune Tech Meetup is the perfect platform to stay updated, gain hands-on experience, and meet like-minded peers in the Pune tech community",
+    "eventTags": ["Tech", "Networking", "Pune"],
+    "eventStartTime": "2024-11-20T10:00:00",
+    "eventEndTime": "2024-11-20T17:00:00",
+    "speakers": [
+      {
+        "name": "Amit Kapoor",
+        "designation": "Data Scientist at Infosys",
+        "profileImgUrl": "https://randomuser.me/api/portraits/men/40.jpg"
+      },
+      {
+        "name": "Riya Sharma",
+        "designation": "Software Engineer at TCS",
+        "profileImgUrl": "https://randomuser.me/api/portraits/women/26.jpg"
+      }
+    ],
+    "pricing": 2000,
+    "eventVenue": "Pune Convention Center",
+    "eventAddress": "789 Tech Street, Pune, Maharashtra",
+    "age": "18 and above",
+    "dressCode": "Casual"
+  },
+  {
+    "eventTitle": "Virtual DevOps Workshop",
+    "eventType": "Online",
+    "eventHostedBy": "Global DevOps Community",
+    "coverImageUrl": "https://example.com/images/devops_workshop.jpg",
+    "eventDescription": "Dive into the world of DevOps with our hands-on Virtual DevOps Workshop! This interactive session is designed to equip developers, system administrators, and IT professionals with practical skills in automating, deploying, and managing applications efficiently. You’ll explore key DevOps tools and practices such as CI/CD, infrastructure as code, containerization, and cloud integration. Whether you're new to DevOps or looking to deepen your expertise, this workshop will provide you with valuable insights and techniques to streamline your workflows and improve collaboration across development and operations teams.",
+    "eventTags": ["DevOps", "Workshop", "Online"],
+    "eventStartTime": "2024-12-05T14:00:00",
+    "eventEndTime": "2024-12-05T18:00:00",
+    "speakers": [
+      {
+        "name": "Sana Khan",
+        "designation": "Cloud Architect at Amazon Web Services",
+        "profileImgUrl": "https://randomuser.me/api/portraits/women/65.jpg"
+      }
+    ],
+    "pricing": 1000,
+    "eventVenue": "Online",
+    "eventAddress": "Zoom - link to be provided upon registration",
+    "age": "18 and above",
+    "dressCode": "Smart Casual"
+  },
+  {
+    "eventTitle": "Full Stack Developer Bootcamp",
+    "eventType": "Both",
+    "eventHostedBy": "TechMasters Institute",
+    "coverImageUrl": "https://example.com/images/fullstack_bootcamp.jpg",
+    "eventDescription": "Transform your career with our Full Stack Developer Bootcamp! This comprehensive program blends online learning with in-person sessions, offering you the flexibility to learn at your own pace while benefiting from hands-on experience. You'll master both front-end and back-end development, including HTML, CSS, JavaScript, Node.js, React, and database management. Designed for aspiring developers, the bootcamp equips you with the skills needed to build and deploy full-scale web applications. Get real-world exposure, personalized mentorship, and career support to launch your journey as a Full Stack Developer.",
+    "eventTags": ["Full Stack", "Bootcamp", "Hybrid"],
+    "eventStartTime": "2025-01-10T09:00:00",
+    "eventEndTime": "2025-01-20T17:00:00",
+    "speakers": [
+      {
+        "name": "Rajiv Nair",
+        "designation": "Full Stack Engineer at Google",
+        "profileImgUrl": "https://randomuser.me/api/portraits/men/29.jpg"
+      },
+      {
+        "name": "Megha Suresh",
+        "designation": "Frontend Developer at Microsoft",
+        "profileImgUrl": "https://randomuser.me/api/portraits/women/87.jpg"
+      }
+    ],
+    "pricing": 5000,
+    "eventVenue": "TechMasters Campus & Online",
+    "eventAddress": "123 Innovation Road, Pune, Maharashtra",
+    "age": "18 and above",
+    "dressCode": "Business Casual"
+  },
+  {
+    "eventTitle": "AI and Machine Learning Conference",
+    "eventType": "Offline",
+    "eventHostedBy": "Pune AI Society",
+    "coverImageUrl": "https://example.com/images/ai_ml_conference.jpg",
+    "eventDescription": "Explore the future of technology at the AI and Machine Learning Conference! This event brings together experts, researchers, and industry leaders to discuss cutting-edge advancements in artificial intelligence and machine learning. Attendees will gain insights into the latest trends, techniques, and applications, from natural language processing and computer vision to deep learning and reinforcement learning. With keynote sessions, panel discussions, and workshops, this conference provides a unique platform to network, learn, and stay ahead in the rapidly evolving world of AI and ML.",
+    "eventTags": ["AI", "Machine Learning", "Conference"],
+    "eventStartTime": "2024-12-10T09:00:00",
+    "eventEndTime": "2024-12-12T18:00:00",
+    "speakers": [
+      {
+        "name": "Dr. Neeraj Joshi",
+        "designation": "Head of AI Research at Google",
+        "profileImgUrl": "https://randomuser.me/api/portraits/men/22.jpg"
+      },
+      {
+        "name": "Priya Desai",
+        "designation": "Data Scientist at IBM",
+        "profileImgUrl": "https://randomuser.me/api/portraits/women/87.jpg"
+      }
+    ],
+    "pricing": 3000,
+    "eventVenue": "Pune International Convention Center",
+    "eventAddress": "456 Knowledge Park, Pune, Maharashtra",
+    "age": "18 and above",
+    "dressCode": "Business Formal"
+  },
+  {
+    "eventTitle": "Women in Tech Webinar",
+    "eventType": "Online",
+    "eventHostedBy": "Women in Technology Network",
+    "coverImageUrl": "https://example.com/images/women_in_tech.jpg",
+    "eventDescription": "Join us for the Women in Tech Webinar, an empowering online event that celebrates and supports women making strides in the tech industry. This webinar features inspiring talks from female leaders, innovators, and entrepreneurs who share their journeys, challenges, and successes. Attendees will gain valuable insights on career growth, overcoming obstacles, and the importance of diversity and inclusion in tech. Whether you're a seasoned professional or just starting your tech career, this webinar provides a platform for learning, networking, and inspiration.",
+    "eventTags": ["Women in Tech", "Webinar", "Networking"],
+    "eventStartTime": "2024-12-20T13:00:00",
+    "eventEndTime": "2024-12-20T16:00:00",
+    "speakers": [
+      {
+        "name": "Alice Patel",
+        "designation": "CIO at TechWomen India",
+        "profileImgUrl": "https://randomuser.me/api/portraits/men/30.jpg"
+      }
+    ],
+    "pricing": 0,
+    "eventVenue": "Online",
+    "eventAddress": "Link provided upon registration",
+    "age": "18 and above",
+    "dressCode": "Casual"
+  },
+  {
+    "eventTitle": "Blockchain & Cryptocurrency Workshop",
+    "eventType": "Both",
+    "eventHostedBy": "Crypto Enthusiasts Club",
+    "coverImageUrl": "https://example.com/images/blockchain_workshop.jpg",
+    "eventDescription": "Dive into the world of blockchain technology and cryptocurrency at our hands-on workshop! Whether you're new to the space or looking to deepen your understanding, this workshop will guide you through the fundamentals of blockchain, how cryptocurrencies work, and their real-world applications. Learn about the principles of decentralized systems, smart contracts, and the future potential of digital currencies. With practical demonstrations and expert insights, you'll gain the knowledge needed to navigate and participate in the rapidly evolving blockchain and cryptocurrency landscape.",
+    "eventTags": ["Blockchain", "Cryptocurrency", "Workshop"],
+    "eventStartTime": "2025-02-05T10:00:00",
+    "eventEndTime": "2025-02-07T17:00:00",
+    "speakers": [
+      {
+        "name": "Vikram Singh",
+        "designation": "Blockchain Developer at Coinbase",
+        "profileImgUrl": "https://randomuser.me/api/portraits/men/58.jpg"
+      },
+      {
+        "name": "Sonal Gupta",
+        "designation": "Cryptocurrency Analyst",
+        "profileImgUrl": "https://randomuser.me/api/portraits/women/63.jpg"
+      }
+    ],
+    "pricing": 4000,
+    "eventVenue": "Tech Park Pune & Online",
+    "eventAddress": "34 Crypto Avenue, Pune, Maharashtra",
+    "age": "18 and above",
+    "dressCode": "Smart Casual"
+  },
+  {
+    "eventTitle": "Cloud Computing Summit",
+    "eventType": "Offline",
+    "eventHostedBy": "Cloud Computing Association",
+    "coverImageUrl": "https://example.com/images/cloud_summit.jpg",
+    "eventDescription": "Join us at the Cloud Computing Summit, a premier event bringing together cloud experts, IT professionals, and business leaders to explore the latest innovations in cloud technologies. This summit covers a wide range of topics, including cloud infrastructure, security, scalability, and the future of multi-cloud and hybrid environments. Through keynotes, panels, and hands-on sessions, attendees will gain valuable insights into how cloud computing is transforming industries and driving digital transformation. Whether you're looking to optimize your cloud strategy or stay updated on the latest trends, the Cloud Computing Summit is the ideal platform for networking and knowledge-sharing.",
+    "eventTags": ["Cloud Computing", "Technology", "Summit"],
+    "eventStartTime": "2025-03-10T09:00:00",
+    "eventEndTime": "2025-03-12T17:00:00",
+    "speakers": [
+      {
+        "name": "Nina Rao",
+        "designation": "Cloud Solutions Architect at Microsoft",
+        "profileImgUrl": "https://randomuser.me/api/portraits/women/63.jpg"
+      },
+      {
+        "name": "Harsh Mehta",
+        "designation": "VP of Cloud Engineering at IBM",
+        "profileImgUrl": "https://randomuser.me/api/portraits/men/36.jpg"
+      }
+    ],
+    "pricing": 0,
+    "eventVenue": "Pune Tech Convention Center",
+    "eventAddress": "789 Cloud Way, Pune, Maharashtra",
+    "age": "18 and above",
+    "dressCode": "Business Formal"
+  }
+]
