@@ -49,6 +49,9 @@ app.use(cors(corsOptions));
 
 // seedData();
 
+app.get('/', (req, res) => res.send('Hello, express'));
+
+//read all events
 async function getAllEvents() {
   try {
     const allEvents = await Event.find();
@@ -64,54 +67,147 @@ app.get('/events', async (req, res) => {
     if (events.length != 0) {
       res.json(events);
     } else {
-      res.status(400).json({ error: 'No events found.' });
+      res.status(404).json({ error: 'No events found.' });
     }
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch events.' });
   }
 });
 
-async function createEvent(newEvent) {
+//get event by Id
+async function getEventById(eventId) {
   try {
-    const event = new Event(newEvent);
-    const saveEvent = await event.save();
-    return saveEvent;
+    const event = await Event.findOne({ _id: eventId });
+    // console.log(event);
+    return event;
   } catch (error) {
     console.log(error);
   }
 }
 
-app.post('/events', async (req, res) => {
+app.get('/events/:eventId', async (req, res) => {
   try {
-    const savedEvent = await createEvent(req.body);
-    res
-      .status(201)
-      .json({ message: 'Event added successfully', event: savedEvent });
-  } catch (error) {
-    res.status(500).json({ error: 'Failed to add event.', error });
-  }
-});
-
-async function updateEvent(eventId, dataToUpdate) {
-  try {
-    const updateEvent = await Event.findByIdAndUpdate(eventId, dataToUpdate, {
-      new: true,
-    });
-    return updateEvent;
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-app.post('/events/:eventId', async (req, res) => {
-  try {
-    const updatedEvent = await updateEvent(req.params.eventId, req.body);
-    if (updatedEvent) {
-      res
-        .status(200)
-        .json({ message: 'Event updated successfully', event: updatedEvent });
+    const event = await getEventById(req.params.eventId);
+    if (event) {
+      res.json(event);
+    } else {
+      res.status(404).json({ error: 'No event found' });
     }
   } catch (error) {
-    res.status(500).json({ error: 'Failed to update event', error });
+    res.status(500).json({ error: 'Failed to get an event' });
   }
 });
+
+//get event by event title
+async function getEventByTitle(title) {
+  try {
+    const event = await Event.findOne({ eventTitle: title });
+    return event;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+app.get('/events/title/:eventTitle', async (req, res) => {
+  try {
+    const event = await getEventByTitle(req.params.eventTitle);
+    if (event) {
+      res.json(event);
+    } else {
+      res.status(404).json({ error: 'No event found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to get an event' });
+  }
+});
+
+//get event by tag name
+async function getEventByTagname(tagName) {
+  try {
+    const events = await Event.find({ eventTags: tagName });
+    console.log(events);
+    return events;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+app.get('/events/tags/:tagName', async (req, res) => {
+  try {
+    const events = await getEventByTagname(req.params.tagName);
+    if (events.length != 0) {
+      res.json(events);
+    } else {
+      res.status(404).json({ error: 'No events found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch events' });
+  }
+});
+
+//get event by event type
+async function getEventsByType(type) {
+  try {
+    const events = await Event.find({ eventType: type });
+    return events;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+app.get('/events/eventType/:type', async (req, res) => {
+  try {
+    const events = await getEventsByType(req.params.type);
+    if (events.length != 0) {
+      res.json(events);
+    } else {
+      res.status(404).json({ error: 'No events found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to get events' });
+  }
+});
+
+// async function createEvent(newEvent) {
+//   try {
+//     const event = new Event(newEvent);
+//     const saveEvent = await event.save();
+//     return saveEvent;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// app.post('/events', async (req, res) => {
+//   try {
+//     const savedEvent = await createEvent(req.body);
+//     res
+//       .status(201)
+//       .json({ message: 'Event added successfully', event: savedEvent });
+//   } catch (error) {
+//     res.status(500).json({ error: 'Failed to add event.', error });
+//   }
+// });
+
+//delete event by id
+// async function deleteEvent(eventId) {
+//   try {
+//     const deletedEvent = await Event.findByIdAndDelete(eventId);
+//     return deletedEvent;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// app.delete('/events/:eventId', async (req, res) => {
+//   try {
+//     const deletedEvent = await deleteEvent(req.params.eventId);
+//     if (deletedEvent) {
+//       res.status(200).json({ message: 'Event deleted successfully' });
+//     } else {
+//       res.status(404).json({ error: 'Event not found' });
+//     }
+//   } catch (error) {
+//     res.status(500).json({ error: 'Failed to delete a event' });
+//   }
+// });
