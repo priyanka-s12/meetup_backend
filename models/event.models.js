@@ -9,6 +9,7 @@ const eventSchema = new mongoosee.Schema(
     eventType: {
       type: String,
       enum: ['Both', 'Online', 'Offline'],
+      default: 'Both',
       required: true,
     },
     eventHostedBy: {
